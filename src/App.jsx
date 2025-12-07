@@ -1,15 +1,15 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Cart from './pages/Cart'
-import Home from './pages/home'
-import Collection from './pages/collection'
-import Contact from './pages/contact'
+import Collection from './pages/Collection'
+import Contact from './pages/Contact'
 import Product from './pages/Product'
 import PlaceOrder from './pages/PlaceOrder'
 import Orders from './pages/Orders'
-import Login from './pages/login'
-import About from './pages/about'
+import Login from './pages/Login'
+import About from './pages/About'
 import Navbar from './components/Navbar'
+import Home from './pages/home'
 
 
 const App = () => {
@@ -20,15 +20,14 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Cart' element={< Cart />} />
-        <Route path='/Collection' element={<Collection />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Product:productId' element={<Product />} />
-        <Route path='/PlaceOrder' element={<PlaceOrder />} />
-        <Route path='/Orders' element={<Orders />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/collection' element={<Collection />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/product/:productId' element={<Product />} />
+        <Route path='/place-order' element={<PlaceOrder />} />
+        <Route path='/orders' element={<Orders />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/Home' element={<Home />} />
-        <Route path='/about' element={< About />} />
+        <Route path='/about' element={<About />} />
 
 
       </Routes>
